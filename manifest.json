@@ -1,0 +1,47 @@
+{
+  "required_api_version": "2",
+  "name": "Ulauncher OpenAI Translate",
+  "description": "A powerful OpenAI translator for Ulauncher.",
+  "developer_name": "0x5c0f",
+  "icon": "images/icon.png",
+  "options": {
+    "query_debounce": 0.1
+  },
+  "preferences": [
+    {
+      "id": "openai_api_key",
+      "type": "input",
+      "name": "OpenAI API Key",
+      "description": "Your OpenAI API Key",
+      "default_value": ""
+    },
+    {
+      "id": "base_url",
+      "type": "input",
+      "name": "Base URL (Optional)",
+      "description": "Custom OpenAI compatible endpoint URL (leave empty for default OpenAI: https://api.openai.com/v1)",
+      "default_value": ""
+    },
+    {
+      "id": "model_name",
+      "type": "input",
+      "name": "Model Name",
+      "description": "OpenAI model to use for translation",
+      "default_value": "gpt-4o-mini"
+    },
+    {
+      "id": "custom_prompt",
+      "type": "text",
+      "name": "System Prompt",
+      "description": "System prompt that defines the translator's behavior. No need to include placeholders.",
+      "default_value": ""
+    },
+    {
+      "id": "keyword",
+      "type": "keyword",
+      "name": "OpenAI Translate",
+      "description": "Keyword to activate OpenAI Translate",
+      "default_value": "ot"
+    }
+  ]
+}
